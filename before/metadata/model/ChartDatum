@@ -1,0 +1,54 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "ChartDatum"
+    },
+    "designerId": "7a1422c8-ab95-4b7b-89b4-e1d951f74c5f",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "label",
+                "designer|userClassName": "field17"
+            },
+            "designerId": "2a905909-79c1-450a-b40e-e20a302e16dc"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "value",
+                "type": "int",
+                "designer|userClassName": "field18"
+            },
+            "designerId": "5830ab20-edd2-426a-b474-5d4118f2ad2b"
+        },
+        {
+            "type": "Ext.data.proxy.JsonP",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyJsonPProxy2",
+                "url": "http://www.senchatraining.com/ftextjs4/webservices/earmark.cfc?method=getSponsorStats"
+            },
+            "designerId": "75705b30-8249-4bd4-af16-49aea3bb10f4"
+        }
+    ]
+}

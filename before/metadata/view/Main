@@ -1,0 +1,95 @@
+{
+    "type": "Ext.container.Viewport",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Main",
+        "requires": [
+            "Ext.layout.container.Border",
+            "Ext.toolbar.TextItem"
+        ],
+        "designer|initialView": true,
+        "layout": "border"
+    },
+    "designerId": "0f0eab22-42a8-433b-9e5b-7f4fb7d9aa47",
+    "cn": [
+        {
+            "type": "Ext.toolbar.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|floatable": false,
+                "layout|region": "north",
+                "height": null,
+                "itemId": "maintoolbar",
+                "designer|userClassName": "MyToolbar"
+            },
+            "designerId": "53b660cc-0564-44ea-a0b2-f1e84cf7e19b",
+            "cn": [
+                {
+                    "type": "Ext.toolbar.TextItem",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "designer|userClassName": "MyTextItem",
+                        "text": "Congressional Earmark Browser"
+                    },
+                    "designerId": "60e1fcfc-ae00-4c0b-b8f7-2d0c756745fb"
+                },
+                {
+                    "type": "Ext.toolbar.Fill",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "designer|userClassName": "MyFill"
+                    },
+                    "designerId": "336b470c-8021-475d-b2e2-00930822010d"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "itemId": "btnFeedback",
+                        "designer|userClassName": "MyButton",
+                        "text": "Feedback"
+                    },
+                    "designerId": "f446203b-732e-431d-a204-325d3ea33f79"
+                }
+            ]
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "center",
+                "itemId": "centerpanel",
+                "designer|userClassName": "MyPanel1",
+                "title": ""
+            },
+            "designerId": "ebb84d49-f5a4-47e4-bade-d9b4a18baac7"
+        }
+    ]
+}

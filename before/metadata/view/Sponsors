@@ -1,0 +1,220 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoShow": true,
+        "height": 600,
+        "width": 472,
+        "designer|userClassName": "Sponsors",
+        "designer|userAlias": "sponsors",
+        "requires": [
+            "Ext.grid.Panel",
+            "Ext.selection.RowModel",
+            "Ext.form.field.ComboBox"
+        ],
+        "constrain": true,
+        "layout": "fit",
+        "closable": false,
+        "title": "Congressional Representatives",
+        "maximizable": true,
+        "minimizable": true
+    },
+    "designerId": "d350af3d-3fb5-49da-95cf-6767049f8555",
+    "cn": [
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "sponsorsgrid",
+                "designer|userClassName": "MyGridPanel",
+                "designer|userAlias": "mygridpanel",
+                "collapseFirst": false,
+                "frameHeader": false,
+                "header": false,
+                "title": null,
+                "columnLines": true,
+                "store": "Sponsors"
+            },
+            "designerId": "6eab7661-edd4-49b6-8323-9a810960a5ba",
+            "cn": [
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 50,
+                        "designer|userClassName": "MyColumn",
+                        "dataIndex": "HONORIFIC",
+                        "text": "Hon"
+                    },
+                    "designerId": "4225cee9-9d52-49f3-81c7-eed201cd0136",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "renderer",
+                                "fn": "renderer",
+                                "designer|params": [
+                                    "value",
+                                    "metaData",
+                                    "record",
+                                    "rowIndex",
+                                    "colIndex",
+                                    "store",
+                                    "view"
+                                ],
+                                "implHandler": [
+                                    "return value.substring(0,3) + '.';"
+                                ]
+                            },
+                            "designerId": "3c6c7b37-8e4d-4271-8f83-042eb16070ea"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyColumn2",
+                        "dataIndex": "FIRSTNAME",
+                        "text": "First Name"
+                    },
+                    "designerId": "f35368e4-e781-4b1a-b526-67048cc0d700"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyColumn3",
+                        "dataIndex": "LASTNAME",
+                        "text": "Last Name",
+                        "flex": 1
+                    },
+                    "designerId": "f31b149f-7445-465b-a4c2-1b108a0f388f"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyColumn4",
+                        "dataIndex": "PARTY",
+                        "text": "Party"
+                    },
+                    "designerId": "7722918b-d5bd-475d-a185-bbbaaf36af5a"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 58,
+                        "designer|userClassName": "MyColumn5",
+                        "dataIndex": "STATE",
+                        "text": "State"
+                    },
+                    "designerId": "373ce3b5-b92b-404d-be57-004717c0fa82"
+                },
+                {
+                    "type": "Ext.grid.View",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyGridView"
+                    },
+                    "designerId": "1cfd1bc9-b4b1-45f6-b2d3-38c7b79e8d60"
+                },
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "top",
+                        "designer|userClassName": "MyToolbar1"
+                    },
+                    "designerId": "ad3c563a-bbbe-4b66-a7ad-4c3d7ad25de9",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.ComboBox",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "tpl": "<tpl for=\".\"><div class=\"x-boundlist-item\">{abbr} - {label}</div></tpl>",
+                                "layout|flex": 1,
+                                "itemId": "stateFilter",
+                                "designer|userClassName": "MyComboBox",
+                                "fieldLabel": "Filter by State:",
+                                "displayField": "label",
+                                "forceSelection": true,
+                                "multiSelect": true,
+                                "queryMode": "local",
+                                "store": "States",
+                                "valueField": "abbr"
+                            },
+                            "designerId": "30aacbd7-917d-48bf-9956-0b327c9414c5",
+                            "customConfigs": [
+                                {
+                                    "group": "(Custom Properties)",
+                                    "name": "tpl",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.selection.RowModel",
+                    "reference": {
+                        "name": "selModel",
+                        "type": "object"
+                    },
+                    "codeClass": "Ext.selection.RowModel",
+                    "userConfig": {
+                        "mode": "MULTI",
+                        "designer|userClassName": "MyRowSelectionModel"
+                    },
+                    "designerId": "a0e0eb15-c808-4a7f-8ea7-c5babd905dd4"
+                }
+            ]
+        }
+    ]
+}

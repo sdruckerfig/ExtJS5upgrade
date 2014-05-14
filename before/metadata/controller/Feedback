@@ -1,0 +1,43 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "stores": [
+            "BookChapters"
+        ],
+        "views": [
+            "Feedback"
+        ],
+        "designer|userClassName": "Feedback"
+    },
+    "designerId": "780ae403-22a1-45b6-b812-536a5999a23b",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onBtnFeedbackClick",
+                "fn": "onBtnFeedbackClick",
+                "implHandler": [
+                    "Ext.create(\"SpendingPortal.view.Feedback\", {",
+                    "    autoShow: true   ",
+                    "});",
+                    ""
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Button",
+                "designer|controlQuery": "#btnFeedback"
+            },
+            "designerId": "9603a4c2-5c80-477f-a1e1-04ae19d60bc7"
+        }
+    ]
+}

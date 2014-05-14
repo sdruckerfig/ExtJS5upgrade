@@ -1,0 +1,19 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": false,
+        "model": "Earmark",
+        "remoteFilter": true,
+        "remoteSort": true,
+        "storeId": "MyStore2",
+        "designer|userClassName": "Earmarks",
+        "groupField": "SPONSORNAME",
+        "pageSize": 500
+    },
+    "designerId": "a7894d07-5c6e-41d8-a636-9f9ba436117b"
+}

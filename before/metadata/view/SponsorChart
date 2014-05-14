@@ -1,0 +1,116 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoShow": true,
+        "height": 320,
+        "width": 501,
+        "designer|userClassName": "SponsorChart",
+        "designer|userAlias": "sponsorchart",
+        "requires": [
+            "Ext.chart.Chart",
+            "Ext.chart.series.Column",
+            "Ext.chart.axis.Category",
+            "Ext.chart.axis.Numeric"
+        ],
+        "constrain": true,
+        "layout": "fit",
+        "title": "Compare Expenditures"
+    },
+    "designerId": "39321df7-49c1-438e-b4b3-181d240de4ea",
+    "cn": [
+        {
+            "type": "Ext.chart.Chart",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoRender": false,
+                "height": 250,
+                "width": 400,
+                "designer|userClassName": "ColumnChart1",
+                "animate": [
+                    "true"
+                ],
+                "insetPadding": 20,
+                "store": "ChartData"
+            },
+            "designerId": "f2a66230-c938-424b-a339-7dd9a0b09d5a",
+            "cn": [
+                {
+                    "type": "Ext.chart.axis.Category",
+                    "reference": {
+                        "name": "axes",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fields": [
+                            "label"
+                        ],
+                        "label": [
+                            "{",
+                            "  rotate: {",
+                            "   degrees: 45",
+                            "  },",
+                            "  renderer: function(s) {",
+                            "    return Ext.String.ellipsis(s,10);    ",
+                            "  }",
+                            "}"
+                        ],
+                        "designer|userClassName": "MyCategoryAxis",
+                        "title": "Elected Representative"
+                    },
+                    "designerId": "6d341de4-aed9-4ee7-8d3d-132abce9c483"
+                },
+                {
+                    "type": "Ext.chart.axis.Numeric",
+                    "reference": {
+                        "name": "axes",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fields": [
+                            "value"
+                        ],
+                        "label": [
+                            "{",
+                            "    renderer: Ext.util.Format.usMoney   ",
+                            "}"
+                        ],
+                        "designer|userClassName": "MyNumericAxis",
+                        "title": "Expenditures",
+                        "decimals": 0
+                    },
+                    "designerId": "9edb41d7-5675-4a0c-afcb-af36c566730f"
+                },
+                {
+                    "type": "Ext.chart.series.Column",
+                    "reference": {
+                        "name": "series",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": [
+                            "{'display':'insideEnd','field':'value','color':'#333','text-anchor':'middle'}"
+                        ],
+                        "designer|userClassName": "MyColumnSeries",
+                        "xField": "label",
+                        "yField": [
+                            "value"
+                        ]
+                    },
+                    "designerId": "f053e438-b3ee-4289-b3be-581fa2c6b112"
+                }
+            ]
+        }
+    ]
+}

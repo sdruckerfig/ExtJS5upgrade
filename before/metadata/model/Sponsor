@@ -1,0 +1,122 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Sponsor"
+    },
+    "designerId": "a162cc19-5274-4c74-81ab-488cd6000529",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "IDSPONSOR",
+                "designer|userClassName": "field"
+            },
+            "designerId": "a57352a9-7ec1-4966-a48b-2a493361ec7c"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "HONORIFIC",
+                "designer|userClassName": "field1"
+            },
+            "designerId": "8be344a7-a516-4570-aede-c8e550517e74"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "FIRSTNAME",
+                "designer|userClassName": "field2"
+            },
+            "designerId": "d7f01092-dd16-4629-871a-f133175ed7ce"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "LASTNAME",
+                "designer|userClassName": "field3"
+            },
+            "designerId": "0d5e0871-06fa-4df0-9110-cba05c843c75"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "PARTY",
+                "designer|userClassName": "field4"
+            },
+            "designerId": "6274dc9a-0a0b-45f7-baf5-25035f4cd448"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "STATE",
+                "designer|userClassName": "field5"
+            },
+            "designerId": "d16e22be-7ca3-4e87-b5d5-baa7550cc16b"
+        },
+        {
+            "type": "Ext.data.proxy.JsonP",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyJsonPProxy",
+                "url": "http://www.senchatraining.com/ftextjs4/webservices/sponsor.cfc?method=wsBigJSONP"
+            },
+            "designerId": "4c9299d9-188f-4355-8a07-998802fd4c6b",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "ROWS",
+                        "successProperty": "SUCCESS",
+                        "totalProperty": "RESULTS",
+                        "designer|userClassName": "MyJsonReader"
+                    },
+                    "designerId": "356adf80-55c7-4468-a9d4-572fb185415e"
+                }
+            ]
+        }
+    ]
+}

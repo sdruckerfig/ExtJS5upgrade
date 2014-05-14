@@ -1,0 +1,185 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Earmark"
+    },
+    "designerId": "65ed7fa7-6f77-41f0-82f6-fed251eb7eab",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "EARMARK_ID",
+                "designer|userClassName": "field8"
+            },
+            "designerId": "53357c3e-cd8c-4b4f-aedc-02c36965622c"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "EARMARK_DESCRIPTION",
+                "designer|userClassName": "field9"
+            },
+            "designerId": "7c861e08-4582-491e-a66f-1ed7a3d0b4a9"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "ENACTED_YEAR",
+                "type": "int",
+                "designer|userClassName": "field10"
+            },
+            "designerId": "da673277-51d1-4fd3-8a84-d1ed4ef8ad64"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "AGENCY_TITLE",
+                "designer|userClassName": "field11"
+            },
+            "designerId": "b4810da3-3ca3-4546-b79f-46ac92fdbc17"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "BUREAU_TITLE",
+                "designer|userClassName": "field12"
+            },
+            "designerId": "dd129819-cc67-4de9-acc6-2b41516c287c"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "AMT_CONF",
+                "type": "float",
+                "designer|userClassName": "field13"
+            },
+            "designerId": "01513df1-d197-4b4b-961a-c474ca50922e"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "SPONSOR",
+                "designer|userClassName": "field14"
+            },
+            "designerId": "75eebbc8-0de7-48db-9111-cde75fd2a5fc"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "SPENDINGCOMMITTEE",
+                "designer|userClassName": "field15"
+            },
+            "designerId": "495c3589-5c4d-4397-8c0a-5fa9e8b11317"
+        },
+        {
+            "type": "Ext.data.proxy.JsonP",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyJsonPProxy1",
+                "url": "http://www.senchatraining.com/ftextjs4/webservices/earmark.cfc?method=wsBigJSONP"
+            },
+            "designerId": "7beafb8d-441d-4c85-a332-b2704354f797",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "ROWS",
+                        "successProperty": "SUCCESS",
+                        "totalProperty": "RESULTS",
+                        "designer|userClassName": "MyJsonReader1"
+                    },
+                    "designerId": "c4255367-a9e0-4ba6-83b3-83a2a1b87dac"
+                }
+            ]
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "SPONSORNAME",
+                "designer|userClassName": "field16"
+            },
+            "designerId": "c8ea7b09-5528-421f-bc79-548059b6bce5",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "convert",
+                        "fn": "convert",
+                        "designer|params": [
+                            "v",
+                            "rec"
+                        ],
+                        "implHandler": [
+                            "return rec.get('SPONSOR').LASTNAME + \", \" + rec.get('SPONSOR').FIRSTNAME;"
+                        ]
+                    },
+                    "designerId": "522c897e-7c5f-4c7f-bcaa-d0bd14fa3682"
+                }
+            ]
+        }
+    ]
+}

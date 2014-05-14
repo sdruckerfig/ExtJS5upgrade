@@ -1,0 +1,21 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "Earmark"
+        ],
+        "stores": [
+            "Earmarks"
+        ],
+        "views": [
+            "Earmarks"
+        ],
+        "designer|userClassName": "Earmarks"
+    },
+    "designerId": "7ecd8e55-eeba-461c-bd85-a4f30dde5e9f"
+}

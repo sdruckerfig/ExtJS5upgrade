@@ -1,0 +1,195 @@
+{
+    "name": "solution",
+    "settings": {
+        "urlPrefix": "http://localhost/arch101/desktop/solution/final",
+        "spacesToIndent": 4,
+        "exportPath": "/Library/WebServer/Documents/arch101/desktop/solutionprod/final",
+        "sdkPath": "",
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false
+    },
+    "xdsVersion": "2.2.0",
+    "xdsBuild": 908,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000499,
+    "framework": "ext42",
+    "topInstanceFileMap": {
+        "4e9a2795-d9a9-40af-9390-4e66c05103b5": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "0f0eab22-42a8-433b-9e5b-7f4fb7d9aa47": {
+            "paths": [
+                "metadata/view/Main",
+                "app/view/override/Main.js",
+                "app/view/Main.js",
+                "app/view/Viewport.js"
+            ],
+            "className": "Main"
+        },
+        "7cabc92e-dfb1-4f4b-ae0d-9dffd3633998": {
+            "paths": [
+                "metadata/view/Earmarks",
+                "app/view/override/Earmarks.js",
+                "app/view/Earmarks.js"
+            ],
+            "className": "Earmarks"
+        },
+        "a162cc19-5274-4c74-81ab-488cd6000529": {
+            "paths": [
+                "metadata/model/Sponsor",
+                "app/model/override/Sponsor.js",
+                "app/model/Sponsor.js"
+            ],
+            "className": "Sponsor"
+        },
+        "4963b397-76d9-4a79-bf5a-f2b1dea2b18a": {
+            "paths": [
+                "metadata/store/Sponsors",
+                "app/store/override/Sponsors.js",
+                "app/store/Sponsors.js"
+            ],
+            "className": "Sponsors"
+        },
+        "d350af3d-3fb5-49da-95cf-6767049f8555": {
+            "paths": [
+                "metadata/view/Sponsors",
+                "app/view/override/Sponsors.js",
+                "app/view/Sponsors.js"
+            ],
+            "className": "Sponsors"
+        },
+        "f183347b-2de9-42ee-90de-5e8bf6cd1bc8": {
+            "paths": [
+                "metadata/controller/Main",
+                "app/controller/override/Main.js",
+                "app/controller/Main.js"
+            ],
+            "className": "Main"
+        },
+        "dedb4238-56e4-4cd9-b32a-15099e92601a": {
+            "paths": [
+                "metadata/store/States",
+                "app/store/override/States.js",
+                "app/store/States.js"
+            ],
+            "className": "States"
+        },
+        "bbeb51e5-b054-49e9-bf60-9887e7b3b564": {
+            "paths": [
+                "metadata/controller/Sponsors",
+                "app/controller/override/Sponsors.js",
+                "app/controller/Sponsors.js"
+            ],
+            "className": "Sponsors"
+        },
+        "65ed7fa7-6f77-41f0-82f6-fed251eb7eab": {
+            "paths": [
+                "metadata/model/Earmark",
+                "app/model/override/Earmark.js",
+                "app/model/Earmark.js"
+            ],
+            "className": "Earmark"
+        },
+        "a7894d07-5c6e-41d8-a636-9f9ba436117b": {
+            "paths": [
+                "metadata/store/Earmarks",
+                "app/store/override/Earmarks.js",
+                "app/store/Earmarks.js"
+            ],
+            "className": "Earmarks"
+        },
+        "7ecd8e55-eeba-461c-bd85-a4f30dde5e9f": {
+            "paths": [
+                "metadata/controller/Earmarks",
+                "app/controller/override/Earmarks.js",
+                "app/controller/Earmarks.js"
+            ],
+            "className": "Earmarks"
+        },
+        "39321df7-49c1-438e-b4b3-181d240de4ea": {
+            "paths": [
+                "metadata/view/SponsorChart",
+                "app/view/override/SponsorChart.js",
+                "app/view/SponsorChart.js"
+            ],
+            "className": "SponsorChart"
+        },
+        "7a1422c8-ab95-4b7b-89b4-e1d951f74c5f": {
+            "paths": [
+                "metadata/model/ChartDatum",
+                "app/model/override/ChartDatum.js",
+                "app/model/ChartDatum.js"
+            ],
+            "className": "ChartDatum"
+        },
+        "d1e3dfdf-2f7a-430a-be5e-7443fd77dfbc": {
+            "paths": [
+                "metadata/store/ChartData",
+                "app/store/override/ChartData.js",
+                "app/store/ChartData.js"
+            ],
+            "className": "ChartData"
+        },
+        "2d0db06c-a7ac-4d38-a57a-c8f78753956d": {
+            "paths": [
+                "metadata/view/Feedback",
+                "app/view/override/Feedback.js",
+                "app/view/Feedback.js"
+            ],
+            "className": "Feedback"
+        },
+        "67c6a544-537f-4454-8c3e-e13c0749a9a0": {
+            "paths": [
+                "metadata/store/BookChapters",
+                "app/store/override/BookChapters.js",
+                "app/store/BookChapters.js"
+            ],
+            "className": "BookChapters"
+        },
+        "780ae403-22a1-45b6-b812-536a5999a23b": {
+            "paths": [
+                "metadata/controller/Feedback",
+                "app/controller/override/Feedback.js",
+                "app/controller/Feedback.js"
+            ],
+            "className": "Feedback"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "0f0eab22-42a8-433b-9e5b-7f4fb7d9aa47",
+            "d350af3d-3fb5-49da-95cf-6767049f8555",
+            "7cabc92e-dfb1-4f4b-ae0d-9dffd3633998",
+            "39321df7-49c1-438e-b4b3-181d240de4ea",
+            "2d0db06c-a7ac-4d38-a57a-c8f78753956d"
+        ],
+        "store": [
+            "4963b397-76d9-4a79-bf5a-f2b1dea2b18a",
+            "dedb4238-56e4-4cd9-b32a-15099e92601a",
+            "67c6a544-537f-4454-8c3e-e13c0749a9a0",
+            "a7894d07-5c6e-41d8-a636-9f9ba436117b",
+            "d1e3dfdf-2f7a-430a-be5e-7443fd77dfbc"
+        ],
+        "controller": [
+            "f183347b-2de9-42ee-90de-5e8bf6cd1bc8",
+            "bbeb51e5-b054-49e9-bf60-9887e7b3b564",
+            "7ecd8e55-eeba-461c-bd85-a4f30dde5e9f",
+            "780ae403-22a1-45b6-b812-536a5999a23b"
+        ],
+        "model": [
+            "a162cc19-5274-4c74-81ab-488cd6000529",
+            "65ed7fa7-6f77-41f0-82f6-fed251eb7eab",
+            "7a1422c8-ab95-4b7b-89b4-e1d951f74c5f"
+        ],
+        "resource": [
+            "4e9a2795-d9a9-40af-9390-4e66c05103b5"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

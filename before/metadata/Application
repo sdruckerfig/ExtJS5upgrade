@@ -1,0 +1,49 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "views": [
+            "Main"
+        ],
+        "requires": [
+            "Ext.window.MessageBox"
+        ],
+        "autoCreateViewport": true,
+        "controllers": [
+            "Main",
+            "Sponsors",
+            "Earmarks",
+            "Feedback"
+        ],
+        "name": "SpendingPortal"
+    },
+    "designerId": "application",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "launch",
+                "fn": "launch",
+                "implHandler": [
+                    "",
+                    "",
+                    "Ext.ComponentQuery.query('#centerpanel')[0].add(",
+                    "    { xtype: 'sponsors', x:5, y:20},",
+                    " { xtype: 'earmarksviewer', x: 500, y: 20},",
+                    " { xtype: 'sponsorchart', x:500, y: 300}",
+                    ");"
+                ]
+            },
+            "designerId": "5f351c66-0dfc-461b-83e9-a6441386c08e"
+        }
+    ]
+}

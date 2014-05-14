@@ -1,0 +1,131 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "Sponsor",
+            "ChartDatum"
+        ],
+        "stores": [
+            "Sponsors",
+            "ChartData",
+            "States"
+        ],
+        "views": [
+            "Sponsors",
+            "SponsorChart"
+        ],
+        "designer|userClassName": "Sponsors"
+    },
+    "designerId": "bbeb51e5-b054-49e9-bf60-9887e7b3b564",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onStateFilterChange",
+                "fn": "onStateFilterChange",
+                "implHandler": [
+                    "console.log('statefilter!');",
+                    "var store = Ext.getStore('Sponsors');",
+                    "",
+                    "if (typeof newValue === 'string') {",
+                    "    store.clearFilter(true);   ",
+                    "} else {",
+                    "    store.filterBy(function(rec) {",
+                    "",
+                    "        if (Ext.Array.indexOf(newValue,rec.get('STATE')) >= 0)",
+                    "        return true;",
+                    "        else",
+                    "        return false;",
+                    "    });",
+                    "}",
+                    ""
+                ],
+                "name": "change",
+                "scope": "me",
+                "designer|targetType": "Ext.form.field.ComboBox",
+                "designer|controlQuery": "#stateFilter"
+            },
+            "designerId": "a5faa004-8556-4645-80c2-549f0237c6a6"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "sponsorsGrid",
+                "ref": "sponsorsGrid",
+                "selector": "sponsors #sponsorsgrid"
+            },
+            "designerId": "f07a1537-b419-46f6-9765-cdaed0843f3b"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onSponsorsgridSelectionChange",
+                "fn": "onSponsorsgridSelectionChange",
+                "implHandler": [
+                    "",
+                    "var aSponsorIds = [];",
+                    "var lastNames = [];",
+                    "for (var i=0; i<selected.length; i++) {",
+                    "    lastNames.push(selected[i].get(\"LASTNAME\"));",
+                    "    aSponsorIds.push(selected[i].get('IDSPONSOR'));",
+                    "}",
+                    "",
+                    "this.getEarmarksViewer().setTitle('Earmarks for ' + lastNames.join(','));",
+                    "Ext.getStore('Earmarks').clearFilter(true);",
+                    "Ext.getStore('Earmarks').filter([",
+                    "{property: 'IDSPONSOR', value: aSponsorIds.join(',')}",
+                    "]);",
+                    "",
+                    "Ext.getStore('ChartData').clearFilter(true);",
+                    "Ext.getStore('ChartData').filter([",
+                    "{property: 'IDSPONSOR', value: aSponsorIds.join(',')}",
+                    "]);",
+                    "",
+                    "console.log(aSponsorIds);",
+                    "",
+                    "",
+                    ""
+                ],
+                "name": "selectionchange",
+                "scope": "me",
+                "designer|targetType": "Ext.grid.Panel",
+                "designer|controlQuery": "#sponsorsgrid"
+            },
+            "designerId": "fabb56d6-74e5-4603-8d19-95983a7f4f9c"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "earmarksViewer",
+                "ref": "earmarksViewer",
+                "selector": "earmarksviewer"
+            },
+            "designerId": "207b92ec-a9ca-4d68-885b-8c6e6b418f31"
+        }
+    ]
+}

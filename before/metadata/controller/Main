@@ -1,0 +1,28 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Main"
+    },
+    "designerId": "f183347b-2de9-42ee-90de-5e8bf6cd1bc8",
+    "cn": [
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "mainPanel",
+                "ref": "mainPanel",
+                "selector": "viewport > #centerpanel"
+            },
+            "designerId": "0e80ced0-abb5-4737-8cd7-526f9d2e1f10"
+        }
+    ]
+}
